@@ -15,7 +15,7 @@
                 v-for="(item, index) in slices" :key="index" 
                 :x.sync="item.x" :y.sync="item.y" 
                 :w.sync="item.w" :h.sync="item.h" 
-                :i="item.id" :ref="item.id"
+                :i="item.i" :ref="item.i"
 				:style="gridItemBackground(item.chart_type, colorStart, colorEnd, bgcolor)"
 				dragIgnoreFrom=".echarts,.x-number,.card-title,.right-buttons" @resized="resizedEvent"
 				@moved="movedEvent" class="chart-item"
@@ -293,6 +293,7 @@
                                     data.data[i].latestTime = this.latest_time; //minutes
                                     data.data[i].w = Number(data.data[i].w);
                                     data.data[i].h = Number(data.data[i].h);
+                                    data.data[i].i = data.data[i].id;
                                 }
                                 _that.slices = data.data;
                                 console.log("_that.slices", _that.slices);
@@ -371,6 +372,7 @@
 			 */
 			handleFocus({ expand, targetRef }) {
 				const expandTarget = this.$refs[targetRef][0];
+                console.log(expand);
 				if (expand) {
 					this.gridDraggable = false;
 					this.gridResizable = false;
