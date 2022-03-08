@@ -1,0 +1,389 @@
+.chart-item {
+    box-shadow: 0px 6px 29px 3px rgba(27, 64, 122, 0.15) !important;
+  }
+  
+  .chart_active {
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  .chartborder {
+    border: 1px solid #847e7e;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  .wid-16 {
+    width: 16%;
+    padding: 0 10px;
+  }
+  
+  .wid-10 {
+    width: 10%;
+    padding: 0 10px;
+  }
+  
+  .buttbox {
+    height: 30px;
+  }
+  
+  .panelbtn {
+    position: absolute;
+    right: 10px;
+  }
+  
+  .themebox {
+    position: relative;
+    bottom: 16px;
+    padding: 3px;
+  }
+  
+  .table td {
+    padding: 0 0.75rem !important;
+    vertical-align: middle !important;
+  }
+  
+  .custom-v-dropdown {
+    &.dropdown-toggle {
+      padding: 0;
+  
+      &:hover {
+        text-decoration: none;
+      }
+  
+      &.dropdown-toggle-no-caret {
+        &:after {
+          content: none;
+        }
+      }
+    }
+  
+    &.dropdown-menu {
+      margin: 0;
+      padding: 0;
+      outline: none;
+  
+      .b-dropdown-text {
+        padding: 0;
+      }
+    }
+  }
+  
+  .themebox:hover,
+  .themebox .dropdown-toggle {
+    background-color: #5b92ff !important;
+  }
+  
+  .chartbox {
+    background-color: #1f2a5e;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid #ecf0f3;
+    border-radius: 0.42rem;
+  }
+  
+  .xs-p-0 {
+    padding: 0 !important;
+  }
+  
+  .height-40 {
+    height: 39px !important;
+    line-height: 39px !important;
+  }
+  
+  .treeselect {
+    top: 9px;
+  }
+  
+  .vselect {
+      margin-top: 7px;
+      height: 40px !important;
+      line-height: 40px !important;
+  }
+  
+  .el-select {
+    bottom: -9px;
+  }
+  
+  .zdybtn {
+    position: relative;
+    bottom: -9px;
+  }
+  
+  .line {
+    border-bottom: 1px solid #949494;
+    height: 1px;
+    width: 20px;
+    position: relative;
+    top: 38px;
+  }
+  
+  .datepickers {
+    position: relative;
+    top: 10px;
+  }
+  
+  .color-item {
+    border: 1px solid #f1f1f1;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border-radius: 4px;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .select-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  footer {
+    margin: 5em 0 3em;
+    font-size: 0.5em;
+    vertical-align: middle;
+  
+    a {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 3px 0 6px;
+      color: #7f8c8d;
+      font-size: 2em;
+      text-decoration: none;
+  
+      &:hover {
+        border-bottom: 2px solid #ccc;
+      }
+    }
+  }
+  
+  .expantdiv {
+    display: inline-block;
+    float: right;
+    position: relative;
+  }
+  
+  .btnbox {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #1da1f2;
+    color: #1da1f2 !important;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #fff !important;
+  }
+  
+  .btnbox:hover {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .left-nav {
+    background-color: #161e43 !important;
+    -webkit-box-shadow: 3px 0px 7px #000;
+    box-shadow: 3px 0px 7px #000;
+  }
+  
+  .left-nav-ul {
+    font-size: 14px;
+  }
+  
+  .left-nav-ul .left-nav-li a {
+    padding: 9px 25px;
+    color: #198bf6;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .logobox {
+    padding: 10px 25px;
+  }
+  
+  .headerlogo {
+    height: 45px;
+  }
+  
+  .ative-li {
+    background: linear-gradient(
+      to right,
+      rgba(41, 56, 125, 0.95) 0%,
+      transparent 100%
+    ) !important;
+    color: #fff !important;
+    border-radius: 4px;
+  }
+  
+  .top-0 {
+    top: 0 !important;
+  }
+  
+  @media (max-width: 600px) {
+    .v-dialog {
+      overflow: hidden !important;
+    }
+  
+    .line {
+      display: none;
+    }
+  
+    .content {
+      padding: 0 !important;
+    }
+  
+    .xs-mb-0 {
+      padding-bottom: 0 !important;
+    }
+  
+    .xs-mt-0 {
+      padding-top: 0 !important;
+    }
+  
+    .scrow {
+      height: 400px !important;
+      overflow: auto;
+    }
+  
+    .closedialog {
+      position: absolute;
+      right: 20px;
+    }
+  
+    .closedialog.svg-icon.svg-icon-md svg {
+      width: 25px !important;
+      height: 25px !important;
+    }
+  
+    .scul_1,
+    .scul_2 {
+      padding: 8px 0px;
+      width: 100%;
+    }
+  
+    .scul_2 {
+    }
+  
+    .scli_1,
+    .scli_2 {
+      padding: 8px 0px;
+      border-bottom: 1px solid #f6f6f6;
+      color: #333;
+      font-size: 15px;
+    }
+  
+    .scli_2 {
+      padding-left: 15px;
+      color: #666;
+    }
+  
+    .sctitle_1 {
+    }
+  
+    .sctitle_2 {
+    }
+  
+    .mapicon {
+      position: relative;
+      bottom: 1px;
+    }
+  
+    .wid-16 {
+      width: 100%;
+      margin-bottom: 8px;
+      padding-bottom: 10px;
+    }
+  
+    .wid-10 {
+      width: 100%;
+      margin-bottom: 8px;
+      padding-bottom: 10px;
+    }
+  }
+  
+  .hide {
+    display: none !important;
+  }
+  
+  .pad-lef-0 {
+    padding-left: 0 !important;
+  }
+  
+  .themebox:hover,
+  .themebox .dropdown-toggle {
+    background-color: #5b92ff !important;
+  }
+  
+  .vue-treeselect__control {
+    height: 40px !important;
+    line-height: 40px;
+  }
+  
+  .vue-treeselect__placeholder,
+  .vue-treeselect__single-value {
+    line-height: 40px;
+  }
+  
+  .zdydatepicker:focus {
+    border: 1px solid #dcdfe6 !important;
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-inlineblock {
+    display: inline-block;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .v-dialog {
+    overflow: hidden !important;
+  }
+  
+  .wid-265 {
+    width: 265px;
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0px;
+    z-index: 98;
+  }
+  
+  .wid-container {
+    padding-left: 250px !important;
+    -webkit-box-flex: 1;
+    flex: 1 auto;
+    -ms-flex: 1 0 0px;
+  }
+  
+  .wid-100 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .slectbox {
+    min-height: 80px;
+  }
+  
+  #chart-right > .rounded {
+    min-height: 80px;
+  }

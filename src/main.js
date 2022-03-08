@@ -16,13 +16,10 @@ import store from "./core/services/store";
 import GlobalComponents from './components/global-components';
 import { jsonProp } from './utils/tool';
 import ApiService from "./core/services/api.service";
-// import MockService from "./core/mock/mock.service";
 import { VERIFY_AUTH } from "./core/services/store/auth.module";
 import { RESET_LAYOUT_CONFIG } from "@/core/services/store/config.module";
 
 import 'echarts/theme/macarons.js'
-
-
 import ElementUI from "element-ui";
 
 // mock data
@@ -33,11 +30,6 @@ Vue.component('date-picker', VuePersianDatetimePicker);
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI);
-
-
-// import $ from 'jquery';
-// Vue.use($);
-
 Vue.use(VueAxiosPlugin, {
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -92,13 +84,11 @@ AMap.initAMapApiLoader({
 ApiService.init();
 
 import DevicePixelRatio from './assets/js/layout/base/devicePixelRatio.js';
+
 //其它使用
 //全局引入devicePixelRatio.js
 //在页面加载之时，调用此方法初始化页面比例
 new DevicePixelRatio().init();
-
-// Remove this to disable mock API
-// MockService.init();
 
 router.beforeEach((to, from, next) => {
     // reset config to initial state

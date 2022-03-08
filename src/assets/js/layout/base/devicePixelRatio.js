@@ -8,6 +8,7 @@ class DevicePixelRatio {
     constructor() {
         //this.flag = false;
     }
+    
     //获取系统类型
     _getSystem() {
         let flag = false;
@@ -21,6 +22,7 @@ class DevicePixelRatio {
             return true;
         }
     }
+    
     //获取页面缩放比例
     //	_getDevicePixelRatio() {
     //		let t = this;
@@ -35,6 +37,7 @@ class DevicePixelRatio {
             element["on" + type] = handler;
         }
     }
+    
     //校正浏览器缩放比例
     _correct() {
         let t = this;
@@ -42,6 +45,7 @@ class DevicePixelRatio {
         // document.getElementsByTagName('body')[0].style.zoom = 1 / window.devicePixelRatio;
         document.getElementsByTagName('body')[0].style.zoom = 0.9;
     }
+    
     //监听页面缩放
     _watch() {
         let t = this;
@@ -50,7 +54,10 @@ class DevicePixelRatio {
             t._correct()
         })
     }
-    //初始化页面比例
+    
+    /**
+     * 初始化页面比例
+     */
     init() {
         let t = this;
         if(t._getSystem()) { //判断设备，目前只在windows系统下校正浏览器缩放比例
