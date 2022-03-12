@@ -193,9 +193,10 @@
 					let script = document.createElement("script");
 					script.type = "text/javascript";
 					script.src = "http://dev.thingspanel.cn" + chart.url;
-					script.onload = () => {
+					script.onload = () => { 
                         // 注册一个图表组件
 						Vue.component(chart.component, _window[chart.chart_type].default);
+                        script.remove();
 						chartCount += 1;
                         
                         // 加载完成

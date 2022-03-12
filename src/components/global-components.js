@@ -7,7 +7,7 @@ import {
   Option,
 } from 'element-ui';
 
-import ECharts from 'vue-echarts/components/ECharts';
+import ECharts from 'ECharts';
 // custom theme
 import themeObj from '../themes/xuetangx.project.json';
 // registering custom theme

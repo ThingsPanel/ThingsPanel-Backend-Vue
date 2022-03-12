@@ -32,21 +32,21 @@
             />
         </div>
     </header>
-    
-    <component
-        :loading="loading"
-        :is="item.chart_type"
-        :id="item.slice_id"
-        :legend="legend"
-        :api-data="apiData"
-        :title="item.title"
-        :fields="item.fields"
-        :colorStart="colorStart"
-        :colorEnd="colorEnd"
-        @init="chartInit"
-        @send="sendMessage"
-    />
-    
+    <div style="flex: 1;width: 100%;position: relative">
+        <component
+            :loading="loading"
+            :is="item.chart_type"
+            :id="item.slice_id"
+            :legend="legend"
+            :api-data="apiData"
+            :title="item.title"
+            :fields="item.fields"
+            :colorStart="colorStart"
+            :colorEnd="colorEnd"
+            @init="chartInit"
+            @send="sendMessage"
+        />
+    </div>
     <v-dialog v-model="dialog" max-width="500px" append-to-body="true">
       <v-form
         ref="form"
@@ -96,7 +96,7 @@ import SyncBtn from "@/components/common/sync-btn";
 import AUTH from "@/core/services/store/auth.module";
 import ApiService from "@/core/services/api.service";
 
-import websocket from "../../utils/websocket";
+import websocket from "@/utils/websocket.js";
 
 //load charts from system and extensions
 const path = require("path");
@@ -287,6 +287,8 @@ export default {
 .slice-wrapper {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-header {
@@ -299,6 +301,7 @@ export default {
   text-align: left;
   position: relative;
   padding: 0 5px;
+  cursor: pointer;
 
   &.center {
     text-align: center;

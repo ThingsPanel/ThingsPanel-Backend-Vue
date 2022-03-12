@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"]
+      },
+      "target": "ES6",
+      "allowSyntheticDefaultImports": true
+    },
+    "include": ["src/**/*"]
+  }

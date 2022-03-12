@@ -23,6 +23,9 @@ module.exports = {
   },
   lintOnSave:false,
   configureWebpack: {
+    externals: {
+        'ECharts': 'VueECharts'
+    },
     resolve: {
       alias: {
         // If using the runtime only build
